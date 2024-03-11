@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/imagens/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>IMC calculator</title>
+  </head>
+  <body>
+    <div class="menu">
+      <header class="main-content">
+        <h1>IMC calculator</h1>
+        <nav>
+          <ul>
+            <li><a href="#calculadora">Calculadora</a></li>
+            <li><a href="#saiba+">Saiba+</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <section class="section-one">
+      <div class="main-content content-one" id="calculadora">
+        <div class="imc-content">
+          <h1>O que é Imc?</h1>
+          <p>
+            O Índice de Massa Corporal (IMC) é uma medida utilizada para avaliar
+            se uma pessoa está com o peso adequado em relação à sua altura. É
+            calculado dividindo-se o peso (em quilogramas) pela altura (em
+            metros) ao quadrado. A fórmula matemática é: IMC = peso (kg) /
+            altura² (m²).
+          </p>
+        </div>
+        <div class="calculadora-content">
+          <form>
+            <h2>Calculadora de Imc</h2>
+            <form>
+              <label for="altura">Altura:</label>
+              <input type="text" placeholder="Sua altura" />
+              <label for="altura">Peso:</label>
+              <input type="number" placeholder="Seu peso" />
+              <button>Calcular</button>
+              <span>Resultado: <i></i></span>
+            </form>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-two">
+      <div class="main-content content-two" id="saiba+">
+        <div class="title-second-section">
+          <h1>Saiba+ sobre os indices de Imc</h1>
+        </div>
+        <div class="saiba-mais-content"></div>
+      </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
