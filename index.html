@@ -18,11 +18,20 @@
     <title>IMC calculator</title>
   </head>
   <body>
+    <input
+      id="close-menu"
+      class="close-menu"
+      type="checkbox"
+      aria-label="Close menu"
+      role="button"
+    />
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label
+    >
     <div class="menu">
-      <header class="main-content">
+      <header class="main-content menu-content">
         <h1>IMC calculator</h1>
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false">
             <li><a href="#calculadora">Calculadora</a></li>
             <li><a href="#saiba+">Saiba+</a></li>
           </ul>
@@ -64,9 +73,7 @@
     <section class="section-two">
       <div class="main-content content-two" id="saiba+">
         <div class="title-second-section">
-          <h1>
-            Saiba<span class="mais-color">+</span> sobre seu indice
-          </h1>
+          <h1>Saiba<span class="mais-color">+</span> sobre seu indice</h1>
         </div>
         <div class="saiba-mais">
           <div class="saiba-mais-content">
