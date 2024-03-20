@@ -39,21 +39,24 @@
             se uma pessoa está com o peso adequado em relação à sua altura. É
             calculado dividindo-se o peso (em quilogramas) pela altura (em
             metros) ao quadrado. A fórmula matemática é: IMC = peso (kg) /
-            altura² (m²).
+            altura².
           </p>
         </div>
         <div class="calculadora-content">
-          <form>
+          <div class="form">
             <h2>Calculadora de Imc</h2>
-            <form>
-              <label for="altura">Altura:</label>
-              <input type="text" placeholder="Sua altura" />
-              <label for="altura">Peso:</label>
-              <input type="number" placeholder="Seu peso" />
-              <button>Calcular</button>
-              <span>Resultado: <i></i></span>
-            </form>
-          </form>
+            <label for="altura">Altura:</label>
+            <input
+              type="number"
+              placeholder="Sua altura"
+              id="altura"
+              value=""
+            />
+            <label for="peso">Peso:</label>
+            <input type="number" placeholder="Seu peso" id="peso" value="" />
+            <button onclick="calcular()">Calcular</button>
+            <span>Resultado: <i id="resultado"></i></span>
+          </div>
         </div>
       </div>
     </section>
@@ -62,15 +65,12 @@
       <div class="main-content content-two" id="saiba+">
         <div class="title-second-section">
           <h1>
-            Saiba<span class="mais-color">+</span> sobre os indices de Imc
+            Saiba<span class="mais-color">+</span> sobre seu indice
           </h1>
         </div>
         <div class="saiba-mais">
           <div class="saiba-mais-content">
-            <h2>
-              Obesidade Classe III (obesidade mórbida): IMC igual ou superior a
-              40
-            </h2>
+            <h2>Obesidade Classe III: IMC igual ou superior a 40</h2>
             <p>
               Obesidade Classe III (obesidade mórbida): Um IMC de 40 ou mais é
               classificado como obesidade Classe III ou obesidade mórbida.
@@ -83,7 +83,7 @@
             </p>
           </div>
           <div class="saiba-mais-content">
-            <h2>Obesidade Classe II (obesidade severa): IMC entre 35 e 39,9</h2>
+            <h2>Obesidade Classe II: IMC entre 35 e 39,9</h2>
             <p>
               Obesidade Classe II (obesidade severa): Um IMC entre 35 e 39,9 é
               considerado obesidade Classe II ou obesidade severa. Pessoas nesta
